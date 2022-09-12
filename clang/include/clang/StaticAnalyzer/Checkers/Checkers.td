@@ -236,6 +236,10 @@ def NonnullGlobalConstantsChecker: Checker<"NonnilStringConstants">,
   HelpText<"Assume that const string-like globals are non-null">,
   Documentation<NotDocumented>,
   Hidden;
+  
+def LossOfSignChecker : Checker<"LossOfSignAssign">,
+  HelpText<"Warn about (possible) loss of sign in assignments and initializations">,
+  Documentation<HasDocumentation>;
 
 } // end "core"
 
